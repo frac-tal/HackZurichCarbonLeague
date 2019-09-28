@@ -12,71 +12,89 @@
         android:id="@+id/edit_league_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
         android:hint="Enter League Name"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/price_pick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/edit_league_name"
+        android:orientation="horizontal"
         android:padding="16dp"
-        android:orientation="horizontal">
+        app:layout_constraintTop_toBottomOf="@id/edit_league_name">
 
-        <RadioButton android:id="@+id/price_1"
+        <RadioButton
+            android:id="@+id/price_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1 CHF"
-            />
+            android:text="1 CHF" />
 
-        <RadioButton android:id="@+id/price_5"
+        <RadioButton
+            android:id="@+id/price_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5 CHF"
             android:checked="true"
-            />
+            android:text="5 CHF" />
 
-        <RadioButton android:id="@+id/price_10"
+        <RadioButton
+            android:id="@+id/price_10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10 CHF"
-            />
+            android:text="10 CHF" />
 
-        <RadioButton android:id="@+id/price_20"
+        <RadioButton
+            android:id="@+id/price_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="20 CHF"
-            />
+            android:text="20 CHF" />
     </RadioGroup>
 
-
-        <EditText
-            android:id="@+id/phone1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Enter Phone"
-            app:layout_constraintTop_toBottomOf="@id/price_pick"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
-
-
-        <Button
-            android:id="@+id/add_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add Another Number"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/phone1"
-            />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Add Friends To League"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_pick" />
 
 
+    <EditText
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter Phone"
+        android:inputType="phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/phone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter Phone"
+        android:inputType="phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone1" />
 
 
-
-
+    <Button
+        android:id="@+id/add_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="Add Another Number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
