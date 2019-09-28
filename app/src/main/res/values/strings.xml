@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CarbonLeague</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_1">Overview</string>
+    <string name="tab_text_2">My Stats</string>
     <string name="track">Track Activity</string>
     <string name="percentage">%1$d%%</string>
     <string name="bicycle">On a bicycle</string>
