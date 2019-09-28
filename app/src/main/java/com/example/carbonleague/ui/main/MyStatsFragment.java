@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.carbonleague.R;
+import com.github.mikephil.charting.charts.PieChart;
 
 public class MyStatsFragment extends Fragment {
 
@@ -26,6 +27,11 @@ public class MyStatsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.my_stats_fragment, container, false);
+    }
+
+    @Override
+    public void onViewCreated (View view, @Nullable Bundle savedInstanceState) {
+        PieChart pieChart = view.findViewById(R.id.chart);
     }
 
     @Override
