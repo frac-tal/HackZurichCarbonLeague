@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    tools:context=".CreateLeague">
+
+
+    <EditText
+        android:id="@+id/edit_league_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Enter League Name"
+        />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/price_pick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_league_name"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/price_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 CHF"
+            />
+
+        <RadioButton android:id="@+id/price_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 CHF"
+            android:checked="true"
+            />
+
+        <RadioButton android:id="@+id/price_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 CHF"
+            />
+
+        <RadioButton android:id="@+id/price_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 CHF"
+            />
+    </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone"
+            app:layout_constraintTop_toBottomOf="@id/price_pick"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+        <Button
+            android:id="@+id/add_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Another Number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phone1"
+            />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
