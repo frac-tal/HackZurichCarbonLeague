@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "761525622755",
+    "firebase_url": "https://hackzurich-f1042.firebaseio.com",
+    "project_id": "hackzurich-f1042",
+    "storage_bucket": "hackzurich-f1042.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761525622755:android:1c060f7e43924e859532d6",
+        "android_client_info": {
+          "package_name": "com.example.carbonleague"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761525622755-q2d1tchmbkrinujm4rgmfjca783eqamg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carbonleague",
+            "certificate_hash": "150b66625e6a1f51c7ff44a461fd7a02bf7bd99b"
+          }
+        },
+        {
+          "client_id": "761525622755-to3e03u0egqsvh4pb80enlco97k1dmmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtAk3Vb83pu4PYikRCiYXPXHsWDO9Sx4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761525622755-to3e03u0egqsvh4pb80enlco97k1dmmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
